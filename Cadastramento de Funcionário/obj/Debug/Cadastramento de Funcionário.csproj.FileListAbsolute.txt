@@ -1,0 +1,13 @@
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.AssemblyReference.cache
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.SuggestedBindingRedirects.cache
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Form1.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Properties.Resources.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.GenerateResource.cache
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.CoreCompileInputs.cache
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Cadastramento de Funcionário.exe.config
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Cadastramento de Funcionário.exe
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Cadastramento de Funcionário.pdb
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.exe
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.pdb
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.g.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Form2.resources

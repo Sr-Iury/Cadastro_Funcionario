@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastramento de Funcionário", "Cadastramento de Funcionário\Cadastramento de Funcionário.csproj", "{3C12CE6F-F79D-4124-AB00-CA0D99F6C0DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C12CE6F-F79D-4124-AB00-CA0D99F6C0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C12CE6F-F79D-4124-AB00-CA0D99F6C0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C12CE6F-F79D-4124-AB00-CA0D99F6C0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C12CE6F-F79D-4124-AB00-CA0D99F6C0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {247DF329-065C-4A58-987E-4E9F6C53A5F5}
+	EndGlobalSection
+EndGlobal
