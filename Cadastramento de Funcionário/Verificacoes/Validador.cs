@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using System;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Linq;
+using ValidaCNPJ;
+using CpfCnpjLibrary;
 
 public static class Validador {
     public static bool CPF(string cpf)
@@ -103,6 +105,5 @@ public static class Validador {
             return false;
         }
     }
-    
 }
 

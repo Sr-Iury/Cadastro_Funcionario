@@ -1,6 +1,5 @@
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.AssemblyReference.cache
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.SuggestedBindingRedirects.cache
-C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Form1.resources
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Properties.Resources.resources
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.GenerateResource.cache
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.CoreCompileInputs.cache
@@ -10,4 +9,47 @@ C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramen
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.exe
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.pdb
 C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.g.resources
-C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Form2.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Google.Protobuf.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\MySql.Data.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Buffers.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Memory.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\ZstdSharp.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Google.Protobuf.pdb
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Google.Protobuf.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\MySql.Data.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Buffers.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.IO.Pipelines.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Memory.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento de Funcionário.csproj.CopyComplete
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.ConFunc.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.Menu.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.CadEmp.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.CadFun.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\obj\Debug\Cadastramento_de_Funcionário.ConEmp.resources
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Flunt.Br.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Flunt.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Consulta.CNPJ.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Library.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\ValidaCNPJ.dll
+C:\Users\ducil\OneDrive\Documentos\POO\Cadastramento de Funcionário\Cadastramento de Funcionário\bin\Debug\Newtonsoft.Json.xml

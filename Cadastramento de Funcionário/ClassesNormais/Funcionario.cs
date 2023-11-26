@@ -1,7 +1,8 @@
 ﻿using System;
 public class Funcionario {
+    public int Id { get; set; } 
     public string Nome { get; set; }
-    public DateTime DataNascimento { get; set; }
+    public DateTime? DataNascimento { get; set; }
     public string Cpf { get; set; }
     public string Rg { get; set; }
     public string Endereco {get; set;}
@@ -17,7 +18,7 @@ public class Funcionario {
 
     }
 
-    public Funcionario(string nome, DateTime data, string cpf, string rg, string endereco, string cidade, string estado, string funcao, double salario, string email, string telefone)
+    public Funcionario(string nome, DateTime? data, string cpf, string rg, string endereco, string cidade, string estado, string funcao, double salario, string email, string telefone)
     {
         nome = this.Nome;
         data = this.DataNascimento;
@@ -30,14 +31,6 @@ public class Funcionario {
         salario = this.Salario;
         email = this.Email;
         telefone = this.Telefone;
-    }
-    public bool VerificaCampos(string nome, DateTime data, string cpf, string rg, string endereco, string cidade, string estado, string funcao, double salario, string email, string telefone)
-    {
-        if (nome == null || data == null || rg == null || endereco == null || cidade == null || estado == null || funcao == null || salario == null || email == null || telefone == null)
-        { 
-            return false;
-        }
-        return true;
     }
 
 }
