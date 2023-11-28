@@ -59,6 +59,7 @@ namespace Cadastramento_de_Funcionário
                     funcionario.Estado = DAOHelper.GetString(leitor, "estado_fun");
                     funcionario.Funcao = DAOHelper.GetString(leitor, "funcao_fun");
                     funcionario.Salario = DAOHelper.GetDouble(leitor, "salario_fun");
+                    funcionario.EstadoCivil = DAOHelper.GetString(leitor, "estado_civ_fun");
                     listaFuncionarios.Add(funcionario);
                 }
 

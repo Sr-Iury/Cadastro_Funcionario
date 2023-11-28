@@ -12,13 +12,14 @@ public class Funcionario {
     public string Telefone { get; set;}
     public double Salario { get; set;}
     public string Email { get; set;}
+    public string EstadoCivil { get; set;}
 
     public Funcionario()
     {
 
     }
 
-    public Funcionario(string nome, DateTime? data, string cpf, string rg, string endereco, string cidade, string estado, string funcao, double salario, string email, string telefone)
+    public Funcionario(string nome, DateTime? data, string cpf, string rg, string endereco, string cidade, string estado, string funcao, double salario, string email, string telefone, string estadoCivil)
     {
         nome = this.Nome;
         data = this.DataNascimento;
@@ -31,6 +32,7 @@ public class Funcionario {
         salario = this.Salario;
         email = this.Email;
         telefone = this.Telefone;
+        estadoCivil = this.EstadoCivil;
     }
 
 }

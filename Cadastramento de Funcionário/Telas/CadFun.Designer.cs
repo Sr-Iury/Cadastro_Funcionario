@@ -34,7 +34,6 @@
             this.rg = new System.Windows.Forms.TextBox();
             this.endereco = new System.Windows.Forms.TextBox();
             this.cidade = new System.Windows.Forms.TextBox();
-            this.estado = new System.Windows.Forms.TextBox();
             this.gmail = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,6 +45,9 @@
             this.funcao = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.estado_civil = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.estado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,14 +89,6 @@
             this.cidade.Name = "cidade";
             this.cidade.Size = new System.Drawing.Size(179, 13);
             this.cidade.TabIndex = 7;
-            // 
-            // estado
-            // 
-            this.estado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.estado.Location = new System.Drawing.Point(550, 167);
-            this.estado.Name = "estado";
-            this.estado.Size = new System.Drawing.Size(179, 13);
-            this.estado.TabIndex = 8;
             // 
             // gmail
             // 
@@ -142,6 +136,9 @@
             this.panel1.BackColor = System.Drawing.Color.BlueViolet;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Controls.Add(this.estado);
+            this.panel1.Controls.Add(this.estado_civil);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.salario);
             this.panel1.Controls.Add(this.telefone);
             this.panel1.Controls.Add(this.cpf);
@@ -150,7 +147,6 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.gmail);
-            this.panel1.Controls.Add(this.estado);
             this.panel1.Controls.Add(this.cidade);
             this.panel1.Controls.Add(this.endereco);
             this.panel1.Controls.Add(this.rg);
@@ -225,6 +221,66 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // estado_civil
+            // 
+            this.estado_civil.FormattingEnabled = true;
+            this.estado_civil.Items.AddRange(new object[] {
+            "Solteiro(a)",
+            "Casado(a)",
+            "Divorciado(a)",
+            "Viúvo(a)",
+            "Separado(a)"});
+            this.estado_civil.Location = new System.Drawing.Point(59, 38);
+            this.estado_civil.Name = "estado_civil";
+            this.estado_civil.Size = new System.Drawing.Size(164, 21);
+            this.estado_civil.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(71, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Selecione o seu estado civil";
+            // 
+            // estado
+            // 
+            this.estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estado.FormattingEnabled = true;
+            this.estado.Items.AddRange(new object[] {
+            "Acre",
+            "Alagoas",
+            "Amapá",
+            "Amazonas",
+            "Bahia",
+            "Ceará",
+            "Espírito Santo",
+            "Goiás",
+            "Maranhão",
+            "Mato Grosso",
+            "Mato Grosso do Sul",
+            "Minas Gerais",
+            "Pará",
+            "Paraíba",
+            "Paraná",
+            "Pernambuco",
+            "Piauí",
+            "Rio de Janeiro",
+            "Rio Grande do Norte",
+            "Rio Grande do Sul",
+            "Rondônia",
+            "Roraima",
+            "Santa Catarina",
+            "São Paulo",
+            "Sergipe",
+            "Tocantins"});
+            this.estado.Location = new System.Drawing.Point(539, 159);
+            this.estado.Name = "estado";
+            this.estado.Size = new System.Drawing.Size(203, 28);
+            this.estado.TabIndex = 22;
+            // 
             // CadFun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,7 +291,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel1);
             this.Name = "CadFun";
-            this.Text = "Form2";
+            this.Text = "Selecione o seu Estado Civil:";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -250,7 +306,6 @@
         private System.Windows.Forms.TextBox rg;
         private System.Windows.Forms.TextBox endereco;
         private System.Windows.Forms.TextBox cidade;
-        private System.Windows.Forms.TextBox estado;
         private System.Windows.Forms.TextBox gmail;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -262,5 +317,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox salario;
+        private System.Windows.Forms.ComboBox estado_civil;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox estado;
     }
 }

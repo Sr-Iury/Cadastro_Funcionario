@@ -30,7 +30,7 @@ namespace Cadastramento_de_Funcionário
             {
                 Conexao conexao = new Conexao();
 
-                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (null, @nome, @data, @cpf, @rg, @telefone, @email, @endereco, @cidade, @estado, @funcao, @salario)");
+                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (null, @nome, @data, @cpf, @rg, @telefone, @email, @endereco, @cidade, @estado, @funcao, @salario, @estado_civil)");
 
                 comando.Parameters.AddWithValue("null", funcionario.Id);
                 comando.Parameters.AddWithValue("@nome", funcionario.Nome);
@@ -44,6 +44,7 @@ namespace Cadastramento_de_Funcionário
                 comando.Parameters.AddWithValue("@estado", funcionario.Estado);
                 comando.Parameters.AddWithValue("@funcao", funcionario.Funcao);
                 comando.Parameters.AddWithValue("@salario", funcionario.Salario);
+                comando.Parameters.AddWithValue("@estado_civil", funcionario.EstadoCivil);
 
                 var resultado = comando.ExecuteNonQuery();
 
@@ -78,7 +79,17 @@ namespace Cadastramento_de_Funcionário
         private void button1_Click(object sender, EventArgs e)
         {
             LimparTextBoxs();
-            MessageBox.Show("TEXTBOX LIMPOS");
+            nome.Clear();
+            cpf.Clear();
+            nome.Clear();
+            cpf.Clear();
+            rg.Clear();
+            telefone.Clear();
+            endereco.Clear();
+            cidade.Clear();
+            estado.Items.Clear();
+            salario.Clear();
+            gmail.Clear();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -89,7 +100,7 @@ namespace Cadastramento_de_Funcionário
         {
             foreach (Control control in this.Controls)
             {
-                if (control is TextBox || control is MaskedTextBox || control is DateTimePicker)
+                if (control is TextBox || control is MaskedTextBox || control is DateTimePicker || control is ComboBox)
                 {
                     var text = control.Text.Replace(",", "").Replace("-", "").Trim();
 
@@ -123,10 +134,15 @@ namespace Cadastramento_de_Funcionário
                     f.Email = gmail.Text;
                     f.DataNascimento = Convert.ToDateTime(date.Text);
                     f.Funcao= funcao.Text;
+                    f.EstadoCivil = estado_civil.Text;
                 if (ExistemTextBoxsVazios() == true)
                 {
                     MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+                }
+                else if(f.EstadoCivil == "" || f.Estado == "" || f.Funcao == "")
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else if (Validacao_CPF.ValidaCPF(f.Cpf) == false)
                 {

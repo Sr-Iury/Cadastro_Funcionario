@@ -195,6 +195,13 @@ namespace Cadastramento_de_Funcionário
         private void button1_Click(object sender, EventArgs e)
         {
             LimparTextBoxs();
+            cnpj.Clear();
+            razao_social.Clear();
+            nome_fantasia.Clear();
+            telefone.Clear();
+            capital_social.Clear();
+            nome_proprietario.Clear();
+            cpf_proprietario.Clear();
         }
 
         private void CadEmp_Load(object sender, EventArgs e)
