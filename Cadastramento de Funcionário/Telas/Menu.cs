@@ -44,11 +44,10 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                Menu con = new Menu();
                 CadFun cadfun = new CadFun();
                 this.Visible = false;
                 cadfun.ShowDialog();
-                con.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {
@@ -60,11 +59,10 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                Menu con = new Menu();
                 CadEmp cademp = new CadEmp();
                 this.Visible = false;
                 cademp.ShowDialog();
-                con.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {

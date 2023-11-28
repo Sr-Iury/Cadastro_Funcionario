@@ -95,7 +95,6 @@
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(179, 13);
             this.estado.TabIndex = 8;
-            this.estado.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // gmail
             // 

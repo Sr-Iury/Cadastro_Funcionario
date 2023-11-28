@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(351, 39);
             this.label1.TabIndex = 22;
             this.label1.Text = "Consulta de Empresa";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabelaEmp
             // 

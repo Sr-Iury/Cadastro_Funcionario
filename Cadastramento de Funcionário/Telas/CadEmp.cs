@@ -26,11 +26,12 @@ namespace Cadastramento_de_Funcionário
             {
                 Conexao conexao = new Conexao(); 
 
-                var comando = conexao.Comando("INSERT INTO Empresa VALUES (null, @cnpj, @razao_social, @situacao_cadastral, @regime_tributario, @data_inicial, @telefone, @capital_social, @endereco_completo, @tipo, @porte, @natureza_juridica, @nome_proprietario, @cpf_proprietario)");
+                var comando = conexao.Comando("INSERT INTO Empresa VALUES (null, @cnpj, @razao_social, @nome_fantasia, @situacao_cadastral, @regime_tributario, @data_inicial, @telefone, @capital_social, @endereco_completo, @tipo, @porte, @natureza_juridica, @nome_proprietario, @cpf_proprietario)");
 
                 comando.Parameters.AddWithValue("null", empresa.Id);
                 comando.Parameters.AddWithValue("@cnpj", empresa.Cnpj);
                 comando.Parameters.AddWithValue("@razao_social", empresa.Razao_Social);
+                comando.Parameters.AddWithValue("@nome_fantasia", empresa.Nome_fantasia);
                 comando.Parameters.AddWithValue("@situacao_cadastral", empresa.Situacao_Cadastral);
                 comando.Parameters.AddWithValue("@regime_tributario", empresa.Regime_Tributario);
                 comando.Parameters.AddWithValue("@data_inicial", empresa.Data_Inicio);
@@ -57,39 +58,6 @@ namespace Cadastramento_de_Funcionário
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void LimparTextBoxs()
         {
             foreach (Control control in this.Controls)
@@ -128,7 +96,7 @@ namespace Cadastramento_de_Funcionário
                 emp.Situacao_Cadastral = situacao_cadastral.Text;
                 emp.Data_Inicio = Convert.ToDateTime(data.Text);
                 emp.Telefone = telefone.Text;
-                emp.Capital_Social = capital_social.Text;
+                emp.Capital_Social = Convert.ToDouble(capital_social.Text);
                 emp.Endereco_Completo = endereco_completo.Text;
                 emp.Natureza_Juridica = natureza_juridica.Text;
                 emp.Nome_Proprietario = nome_proprietario.Text;
@@ -196,13 +164,13 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                CadEmp EMP = new CadEmp();
                 ConEmp comemp = new ConEmp();
                 this.Visible = false;
                 comemp.ShowDialog();
-                EMP.Close();
+                this.Visible = true;
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -212,11 +180,10 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                CadEmp cademp = new CadEmp();
                 Menu formfun = new Menu();
                 this.Visible = false;
                 formfun.ShowDialog();
-                cademp.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {
@@ -230,7 +197,7 @@ namespace Cadastramento_de_Funcionário
             LimparTextBoxs();
         }
 
-        private void cpf_proprietario_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void CadEmp_Load(object sender, EventArgs e)
         {
 
         }

@@ -9,7 +9,7 @@ public class Empresa
     public string Regime_Tributario { get; set; }
     public DateTime? Data_Inicio { get; set; }
     public string Telefone { get; set; }
-    public string Capital_Social { get; set; }
+    public double Capital_Social { get; set; }
     public string Endereco_Completo { get; set; }
     public string Tipo { get; set; }
     public string Porte { get; set; }
@@ -22,7 +22,7 @@ public class Empresa
 
     }
 
-    public Empresa(string Razao_Social, string Situacao_Cadastral, string Nome_fantasia, string Regime_Tributario, DateTime? Data_Inicio, string Telefone, string Capital_Social, string Endereco_Completo, string Tipo, string Porte, string Natureza_Juridica, string Nome_Proprietario, string Cpf_Proprietario, string cnpj)
+    public Empresa(string Razao_Social, string Situacao_Cadastral, string Nome_fantasia, string Regime_Tributario, DateTime? Data_Inicio, string Telefone, double Capital_Social, string Endereco_Completo, string Tipo, string Porte, string Natureza_Juridica, string Nome_Proprietario, string Cpf_Proprietario, string cnpj)
     {
         Razao_Social = this.Razao_Social;
         Situacao_Cadastral = this.Situacao_Cadastral;

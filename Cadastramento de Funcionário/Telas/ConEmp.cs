@@ -21,21 +21,15 @@ namespace Cadastramento_de_Funcionário
             Consultar();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
           
             try
             {
-                ConEmp cemp = new ConEmp();
                 CadEmp formemp = new CadEmp();
                 this.Visible = false;
                 formemp.ShowDialog();
-                cemp.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {
@@ -61,11 +55,12 @@ namespace Cadastramento_de_Funcionário
                     empresa.Id = DAOHelper.GetInt(leitor, "id_emp");
                     empresa.Cnpj = DAOHelper.GetString(leitor, "cnpj_emp");
                     empresa.Razao_Social = DAOHelper.GetString(leitor, "razao_soc_emp");
+                    empresa.Nome_fantasia = DAOHelper.GetString(leitor, "nome_fan_emp");
                     empresa.Situacao_Cadastral = DAOHelper.GetString(leitor, "situacao_cad_emp");
                     empresa.Regime_Tributario = DAOHelper.GetString(leitor, "regime_tri_emp");
                     empresa.Data_Inicio = DAOHelper.GetDateTime(leitor, "data_ini_emp");
                     empresa.Telefone = DAOHelper.GetString(leitor, "telefone_emp");
-                    empresa.Capital_Social = DAOHelper.GetString(leitor, "capital_soc_emp");
+                    empresa.Capital_Social = DAOHelper.GetDouble(leitor, "capital_soc_emp");
                     empresa.Endereco_Completo = DAOHelper.GetString(leitor, "endereco_com_emp");
                     empresa.Tipo = DAOHelper.GetString(leitor, "tipo_emp");
                     empresa.Porte = DAOHelper.GetString(leitor, "porte_emp");

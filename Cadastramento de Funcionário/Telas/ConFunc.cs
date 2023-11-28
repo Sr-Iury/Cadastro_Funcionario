@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cadastramento_de_Funcionário
+namespace Cadastramento_de_Funcionário 
 {
     public partial class ConFunc : Form
     {
@@ -26,11 +26,10 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                ConFunc con = new ConFunc();
                 CadFun func = new CadFun();
                 this.Visible = false;
                 func.ShowDialog();
-                con.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {

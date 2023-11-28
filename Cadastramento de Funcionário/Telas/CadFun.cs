@@ -111,17 +111,18 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                Funcionario f = new Funcionario();
-                f.Nome = nome.Text;
-                f.Cpf = cpf.Text;
-                f.Rg = rg.Text;
-                f.Telefone = telefone.Text;
-                f.Endereco = endereco.Text;
-                f.Cidade = cidade.Text;
-                f.Estado = estado.Text;
-                f.Salario = double.Parse(salario.Text);
-                f.Email = gmail.Text;
-                f.DataNascimento = Convert.ToDateTime(date.Text);
+                    Funcionario f = new Funcionario();
+                    f.Nome = nome.Text;
+                    f.Cpf = cpf.Text;
+                    f.Rg = rg.Text;
+                    f.Telefone = telefone.Text;
+                    f.Endereco = endereco.Text;
+                    f.Cidade = cidade.Text;
+                    f.Estado = estado.Text;
+                    f.Salario = double.Parse(salario.Text);
+                    f.Email = gmail.Text;
+                    f.DataNascimento = Convert.ToDateTime(date.Text);
+                    f.Funcao= funcao.Text;
                 if (ExistemTextBoxsVazios() == true)
                 {
                     MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -158,11 +159,10 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                CadFun cadfun = new CadFun();
                 Menu men = new Menu();
                 this.Visible = false;
                 men.ShowDialog();
-                cadfun.Close();
+                this.Visible = true;
             }
             catch (Exception EX)
             {
@@ -174,13 +174,12 @@ namespace Cadastramento_de_Funcionário
         {
             try
             {
-                CadFun cadfun = new CadFun();
                 ConFunc consulta = new ConFunc();
                 this.Visible = false;
                 consulta.ShowDialog();
-                cadfun.Close();
+                this.Visible = true;
             }
-            catch(Exception EX)
+            catch (Exception EX)
             {
                 MessageBox.Show(EX.Message);
             }
