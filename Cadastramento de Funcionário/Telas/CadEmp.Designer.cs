@@ -162,9 +162,9 @@
             this.simples.AutoSize = true;
             this.simples.Location = new System.Drawing.Point(2, 14);
             this.simples.Name = "simples";
-            this.simples.Size = new System.Drawing.Size(114, 17);
+            this.simples.Size = new System.Drawing.Size(106, 17);
             this.simples.TabIndex = 35;
-            this.simples.Text = "Situação Tributária";
+            this.simples.Text = "Simples Nacional";
             this.simples.UseVisualStyleBackColor = true;
             // 
             // lucro

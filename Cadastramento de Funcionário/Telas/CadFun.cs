@@ -104,7 +104,7 @@ namespace Cadastramento_de_Funcionário
                 {
                     var text = control.Text.Replace(",", "").Replace("-", "").Trim();
 
-                    if (text == "")
+                    if (text == "" || text == null)
                     {
                         return true;
                     }
@@ -151,6 +151,10 @@ namespace Cadastramento_de_Funcionário
                 else if (Validador.Email(f.Email) == false)
                 {
                     MessageBox.Show("Email inválido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else if (f.Nome == "" || f.Nome == null || f.Rg == "" || f.Rg == null || f.Telefone == "" || f.Telefone == null || f.DataNascimento == null || f.EstadoCivil == "" || f.EstadoCivil == null || f.Funcao == "" || f.Funcao == null || f.Salario == null || f.Estado == "" || f.Estado == null || f.Cidade == "" || f.Cidade == null)
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {

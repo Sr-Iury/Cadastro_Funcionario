@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Cadastramento_de_Funcionário.Configuracao;
 using CpfCnpjLibrary;
+using K4os.Compression.LZ4.Internal;
+using Org.BouncyCastle.Ocsp;
 
 namespace Cadastramento_de_Funcionário
 {
@@ -37,7 +39,7 @@ namespace Cadastramento_de_Funcionário
                 comando.Parameters.AddWithValue("@data_inicial", empresa.Data_Inicio);
                 comando.Parameters.AddWithValue("@telefone", empresa.Telefone);
                 comando.Parameters.AddWithValue("@capital_social", empresa.Capital_Social);
-                comando.Parameters.AddWithValue("endereco_completo", empresa.Endereco_Completo);
+                comando.Parameters.AddWithValue("@endereco_completo", empresa.Endereco_Completo);
                 comando.Parameters.AddWithValue("@tipo", empresa.Tipo);
                 comando.Parameters.AddWithValue("@porte", empresa.Porte);
                 comando.Parameters.AddWithValue("@natureza_juridica", empresa.Natureza_Juridica);
@@ -76,7 +78,7 @@ namespace Cadastramento_de_Funcionário
                 {
                     var text = control.Text.Replace(",", "").Replace("-", "").Trim();
 
-                    if (text == "")
+                    if (text == "" || text == null)
                     {
                         return true;
                     }
@@ -147,7 +149,26 @@ namespace Cadastramento_de_Funcionário
                 }
                 else if(Validador.CPF(emp.Cpf_Proprietario) == false)
                 {
-                    MessageBox.Show("CFF inválido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("CPF inválido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else if (emp.Razao_Social == "" || emp.Razao_Social == null || emp.Nome_fantasia== "" || emp.Nome_fantasia == null || emp.Situacao_Cadastral == "" || emp.Situacao_Cadastral == null || emp.Telefone == null || emp.Telefone == "" || emp.Capital_Social == null || emp.Endereco_Completo == null || emp.Endereco_Completo == "" || emp.Natureza_Juridica == null || emp.Natureza_Juridica == "" || emp.Nome_Proprietario == null || emp.Nome_Proprietario == "")
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+                else if (filial.Checked == false && matriz.Checked == false)
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                else if (pequeno.Checked == false && medio.Checked == false && grande.Checked == false)
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                else if (simples.Checked == false && lucro.Checked == false && real.Checked == false)
+                {
+                    MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
